@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Marian_Andreea_lab5.Models;
 namespace Marian_Andreea_lab5.Models
 {
         public class ExpenseContext : DbContext
@@ -13,6 +14,7 @@ namespace Marian_Andreea_lab5.Models
             }
             public DbSet<Expense> Expense { get; set; }
             public DbSet<ExpenseDTO> ExpenseDTO { get; set; }
+            public DbSet<Budget> Budget { get; set; }
 
 
     }
